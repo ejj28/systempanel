@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ejj28/systempanel/issues"
   },
-  "homepage": "https://github.com/ejj28/systempanel#readme"
+  "homepage": "https://github.com/ejj28/systempanel#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
