@@ -16,6 +16,11 @@ Http.onreadystatechange = (e) => {
 	var cpuData = JSON.parse(Http.responseText);
 	app.cpuMfg = cpuData.mfg;
 	app.cpuModel = cpuData.model;
+	if (app.cpuMfg.includes("Intel")) {
+		$('#cpuManufacturer').css('color', 'blue');
+	} else if (app.cpuMfg.includes("AMD")) {
+		$('#cpuManufacturer').css('color', 'red');
+	}
 }
 
 function getTemp() {
