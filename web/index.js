@@ -22,7 +22,7 @@ function getOSInfo() {
 
 	Http.onreadystatechange = (e) => {
 		var osData = JSON.parse(Http.responseText);
-		sidebar.header = osData.hostname;
+		sidebar.hostname = osData.hostname;
 		
 	}
 }
